@@ -1,6 +1,4 @@
-#!/bin/bash
-# Configure Raspberry Pi as a USB controller
-
+sudo -i
 modprobe libcomposite
 cd /sys/kernel/config/usb_gadget/
 mkdir -p tweaky
@@ -28,5 +26,3 @@ echo -ne \\x05\\x01\\x09\\x04\\xa1\\x01\\x05\\x09\\x19\\x01\\x29\\x08\\x15\\x00\
 
 ln -s functions/hid.usb0 configs/c.1/
 ls /sys/class/udc > UDC
-
-
