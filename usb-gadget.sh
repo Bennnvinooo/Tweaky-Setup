@@ -28,3 +28,5 @@ echo -ne \\x05\\x01\\x09\\x04\\xa1\\x01\\x05\\x09\\x19\\x01\\x29\\x08\\x15\\x00\
 
 ln -s functions/hid.usb0 configs/c.1/
 ls /sys/class/udc > UDC
+
+
